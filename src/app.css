@@ -1,0 +1,179 @@
+.bg-gradient-spotify {
+  background: linear-gradient(45deg, #000000 0%, #808080 50%, #1DB954 100%);
+  /* Optional: Add more properties for a complete background style */
+  background-size: cover;
+  /* Ensures the gradient covers the entire element */
+  background-position: center;
+  /* Centers the gradient */
+  background-repeat: no-repeat;
+  /* Prevents the gradient from repeating */
+}
+
+/* You can also try a slightly different angle or color distribution: */
+.bg-gradient-spotify-alt1 {
+  background: linear-gradient(90deg, black 0%, rgba(128, 128, 128, 0.7) 30%, #1DB954 70%, black 100%);
+}
+
+.bg-gradient-spotify-alt2 {
+  background: linear-gradient(135deg, #000 10%, #808080 40%, #1DB954 70%, #808080 90%);
+}
+
+/* For a more subtle and modern look, you can use lighter shades or more stops: */
+.bg-gradient-spotify-subtle {
+  background: linear-gradient(135deg, #111 0%, #555 30%, #22bb55 60%, #444 90%);
+  /* Slightly lighter shades */
+}
+
+/* You can also experiment with radial gradients: */
+.bg-gradient-spotify-radial {
+  background: radial-gradient(circle, #1DB954 0%, #808080 50%, #000000 100%);
+}
+
+.bg-gradient-spotify-radial-alt {
+  background: radial-gradient(ellipse at center, black 0%, rgba(128, 128, 128, 0.8) 40%, #1DB954 70%);
+}
+
+.bg-gradient-spotify-glassy {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(128, 128, 128, 0.7) 50%, rgba(29, 185, 84, 0.7) 100%);
+  backdrop-filter: blur(10px);
+  /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari support */
+  /* Optional: Add more properties for a complete background style */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  /* Ensure text on top is readable */
+}
+
+.bg-gradient-spotify-alt1-glassy {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(128, 128, 128, 0.5) 30%, rgba(29, 185, 84, 0.7) 70%, rgba(0, 0, 0, 0.7) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+}
+
+.bg-gradient-spotify-alt2-glassy {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 10%, rgba(128, 128, 128, 0.6) 40%, rgba(29, 185, 84, 0.7) 70%, rgba(128, 128, 128, 0.6) 90%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+}
+
+.bg-gradient-spotify-subtle-glassy {
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.7) 0%, rgba(85, 85, 85, 0.5) 30%, rgba(34, 187, 85, 0.7) 60%, rgba(68, 68, 68, 0.6) 90%);
+  /* Slightly lighter shades with transparency */
+  backdrop-filter: blur(8px);
+  /* Slightly less blur for subtle effect */
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+}
+
+.bg-gradient-spotify-radial-glassy {
+  background: radial-gradient(circle, rgba(29, 185, 84, 0.7) 0%, rgba(128, 128, 128, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  backdrop-filter: blur(12px);
+  /* Adjust blur for radial effect */
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+}
+
+.bg-gradient-spotify-radial-alt-glassy {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(128, 128, 128, 0.6) 40%, rgba(29, 185, 84, 0.7) 70%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+/* #8BCFA6 */
+.input>label {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 14;
+}
+
+.input input[type="file"]::file-selector-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.input input,
+.input textarea {
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.music-box {
+  padding: 0 10px;
+}
+
+.music-box .box {
+  overflow: auto;
+  height: 100vh;
+}
+
+.album {
+  padding: 10px 20px;
+  background-color: #666;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.button-group.apart {
+  justify-content: space-between;
+}
+
+
+.loader {
+  border: 8px solid #f3f3f3;
+  /* Light grey */
+  border-top: 8px solid #8BCFA6;
+  /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  animation: spin 2s linear infinite;
+  margin: "0 auto"
+}
+
+.loader.mini {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

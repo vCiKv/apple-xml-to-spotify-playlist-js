@@ -1,0 +1,21 @@
+{
+  "name": "apple-spotify-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.0.7",
+    "preact": "^10.26.2",
+    "vite-plugin-commonjs": "^0.10.4"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}
